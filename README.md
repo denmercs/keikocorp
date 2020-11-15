@@ -96,18 +96,47 @@ rsync -av . root@IP_ADDRESS_HERE:~/FOLDER_NAME
      - CDN for the images like imgix.com
      - remove metatags of the photos
 
-   b. Reducing the network request
+   b. Minimize Delivery - Reducing the network request
 
    - don't use bootstrap or just use flexbox and css
    - think about the library to import (especially the size)
 
-   c. CRITICAL RENDER PATH
+   ##### Resources
 
-   - css first as soon as possible and then javascript
+   1. webpagetest
+   2. pagespeed by Google
 
 2. FRONTEND - Improve the client side
 
-   - reducing the number of frequency of request to make
-   - structure it more efficiently
+   a. CRITICAL RENDER PATH
+
+   ##### FOR HTML
+
+   1. css first as soon as possible and then javascript
+   2. reducing the number of frequency of request to make
+   3. structure it more efficiently (in html load the css first and then javascript at the bottom)`
+
+   ##### FOR CSS
+
+   1. Load only what is needed
+   2. Above the fold loading
+   3. Media attributes
+   4. Less specificity
+
+   ##### FOR JS
+
+   1. Load scripts asynchronously
+   2. Defer Loading of scripts
+   3. Minimize DOM manipulation
+   4. Avoid long running JS
+
+   b. Optimize Code
+
+   c. Progressive Web App
 
 3. BACKEND PROCCESSING
+   a. CDNs
+   b. Caching
+   c. Load balancing
+   d. Db Scaling
+   e. GZIP
