@@ -172,3 +172,15 @@ rsync -av . root@IP_ADDRESS_HERE:~/FOLDER_NAME
   npm i --save-dev babel-core babel-loader babel-preset-env
 
 #### CODE SPLITTING
+
+#### SHOULDUPDATECOMPONENT AND PURECOMPONENT
+
+https://medium.com/@francois.barrailla/re-implement-purecomponent-with-react-hooks-c0fb180c2feb
+
+- notes about pure components
+
+#### PROGRESSIVE WEB APPS
+
+- HTTPS
+- APP Manifest
+- Service Worker
