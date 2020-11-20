@@ -176,11 +176,21 @@ rsync -av . root@IP_ADDRESS_HERE:~/FOLDER_NAME
 #### SHOULDUPDATECOMPONENT AND PURECOMPONENT
 
 https://medium.com/@francois.barrailla/re-implement-purecomponent-with-react-hooks-c0fb180c2feb
+https://developmentarc.gitbooks.io/react-indepth/content/life_cycle/update/using_should_component_update.html
 
 - notes about pure components
 
 #### PROGRESSIVE WEB APPS
 
-- HTTPS
+- HTTPS - prevents bad actors
+  letsencrypt.org
+  cloudflare.com
+
 - APP Manifest
+  check the favicon: https://realfavicongenerator.net/
+
 - Service Worker
+  is a programmable proxy
+
+- check list of PWA
+  https://web.dev/pwa-checklist/
