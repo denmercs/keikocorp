@@ -140,3 +140,35 @@ rsync -av . root@IP_ADDRESS_HERE:~/FOLDER_NAME
    c. Load balancing
    d. Db Scaling
    e. GZIP
+
+#### Frameworks
+
+- frameworks are only tools
+- tool change and libraries evolve
+
+#### Bundles
+
+- npm i --save-dev webpack webpack-dev-server webpack-cli
+- change the script from package.json to:
+  "scripts": {
+  "start": "webpack serve --config ./webpack.config.js --mode development"development"
+  },
+
+- touch webpack.config.js:
+  module.exports = {
+  entry: ["./src/index.js"],
+  output: {
+  path: \_\_dirname + "/dist",
+  publicPath: "/",
+  filename: "bundle.js",
+  },
+
+  devServer: {
+  contentBase: "./dist",
+  },
+  };
+
+- installing babel
+  npm i --save-dev babel-core babel-loader babel-preset-env
+
+#### CODE SPLITTING
