@@ -194,3 +194,34 @@ https://developmentarc.gitbooks.io/react-indepth/content/life_cycle/update/using
 
 - check list of PWA
   https://web.dev/pwa-checklist/
+
+#### SINGLE PAGE APPLICATION VS SERVER SIDE
+
+- SINGLE PAGE APPLICATION (CLIENT SIDE RENDERING)
+
+  - ReactDOM.hydrate() <------ ReactDOMServer.renderToNodeStream(), ReactDOMServer.renderTostring()
+
+  PROS:
+
+  - rich interactions
+  - faster response
+  - web application
+
+  CONS:
+
+  - low SEO potential
+  - longer initial load
+
+#### SERVER SIDE (SERVER SIDE RENDERING)
+
+PROS:
+
+- static sites
+- SEO
+- initial page load
+
+CONS:
+
+- full page reloads
+- slower page rendering
+- number request to server
